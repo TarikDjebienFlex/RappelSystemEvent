@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"
+			   >
+
+
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+
+			protected function SurMonBoutonClick(event:MouseEvent):void
+			{
+				Alert.show( "On a cliqué sur le bouton Transférer" );
+			}
+			
+		]]>
+	</fx:Script>
+	
+	
+	<s:Button id="monBouton" label="Transférer" top="100" left="100"
+			  click="SurMonBoutonClick(event)"
+			  />
+	
+	
+</s:Application>
